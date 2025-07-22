@@ -1,0 +1,103 @@
+Step 1: Start.
+
+Step 2: Include the required header files:
+
+string.h
+
+ctype.h
+
+stdio.h
+
+Step 3: Initialize global variables:
+
+k_count = 0 to count keywords.
+
+i_count = 0 to count identifiers.
+
+Step 4: Define the function keyword(char str[10]):
+
+Check if the input string is a C keyword using strcmp().
+
+If it matches, print it's a keyword and increment k_count.
+
+Otherwise, print it's an identifier and increment i_count.
+
+Step 5: In the main() function:
+
+Declare file pointers f1, f2, and f3.
+
+Declare character variables and arrays: c, str[10], str1[10].
+
+Declare integer variables: num[100], lineno, tokenvalue, i, j, k, count, s_count.
+
+Step 6: Open files:
+
+input.txt in read mode (f1)
+
+identifier in write mode (f2)
+
+special char in write mode (f3)
+
+Step 7: Read characters from input.txt using getc() in a loop until EOF:
+
+If character is a digit:
+
+Convert to number and form complete numeric token.
+
+Store number in num[].
+
+Increment count.
+
+Else if character is an alphabet:
+
+Write character to identifier file.
+
+Continue reading alphanumeric characters, _, or $, and write to file.
+
+Add space at the end of the word.
+
+Else if character is space or tab, print a space.
+
+Else if character is newline (\n), increment lineno.
+
+Else: Write character to special char file.
+
+Step 8: Close all three files.
+
+Step 9: Print the list of numbers found in the program from the num[] array.
+
+Step 10: Open identifier file in read mode.
+
+Step 11: Read each word (separated by space) from the file:
+
+Store characters in str until space is found.
+
+Terminate string with \0.
+
+Call keyword(str) to check and print whether it's a keyword or identifier.
+
+Step 12: Close identifier file.
+
+Step 13: Open special char file in read mode.
+
+Step 14: Read each character and:
+
+Print it.
+
+Increment s_count.
+
+Step 15: Close special char file.
+
+Step 16: Print the final counts:
+
+Total number of lines (lineno)
+
+Count of numbers (count)
+
+Total number of keywords (k_count)
+
+Total number of identifiers (i_count)
+
+Total number of special characters (s_count)
+
+Step 17: End.
