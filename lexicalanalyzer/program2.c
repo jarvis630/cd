@@ -23,8 +23,8 @@ int main() {
     int num[100], lineno = 0, tokenvalue = 0, i = 0, j = 0, k = 0, count = 0, s_count = 0;
 
     f1 = fopen("input.txt", "r");
-    f2 = fopen("identifier", "w");
-    f3 = fopen("special char", "w");
+    f2 = fopen("identifier.txt", "w");
+    f3 = fopen("specialchar.txt", "w");
 
     if (f1 == NULL || f2 == NULL || f3 == NULL) {
         printf("Error opening files.\n");
@@ -71,7 +71,7 @@ int main() {
 
     printf("\n");
 
-    f2 = fopen("identifier", "r");
+    f2 = fopen("identifier.txt", "r");
     if (f2 == NULL) {
         printf("Error opening identifier file.\n");
         return 1;
@@ -89,7 +89,7 @@ int main() {
     }
     fclose(f2);
 
-    f3 = fopen("special char", "r");
+    f3 = fopen("specialchar.txt", "r");
     if (f3 == NULL) {
         printf("Error opening special char file.\n");
         return 1;
