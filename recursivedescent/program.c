@@ -19,15 +19,11 @@ int main()
     E();
     if((strlen(expression) == count) && (flag == 0))
     {
-        printf("
-The Expression %s is Valid
-", expression);
+        printf("The Expression %s is Valid", expression);
     }
     else
     {
-        printf("
-The Expression %s is Invalid
-", expression);
+        printf("The Expression %s is Invalid", expression);
     }
 }
 
