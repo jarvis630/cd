@@ -56,8 +56,9 @@ void main()
 			e_closure[i][j]=0;
 		}
 		findclosure(i, i);
-		print_e_closure(i);
 		printf("e-closure(q%d): ",i);
+		print_e_closure(i);
+		printf("\n");
 	}
 }
 
