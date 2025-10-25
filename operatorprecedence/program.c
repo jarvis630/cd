@@ -76,8 +76,8 @@ void main()
         {
             stack[++top] = opt[row][col][0];
             stack[++top] = ip[i];
-            ip[i] = ' ';
             printf("Shift %c", ip[i]);
+            ip[i] = ' ';
             i++;
         }
         else
