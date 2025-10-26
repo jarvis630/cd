@@ -24,7 +24,7 @@ int isOperator(char c) {
 int main() {
     FILE *f1, *f2, *f3, *f4;
     char c, str[10], str1[10];
-    int num[100], lineno = 0, tokenvalue = 0, i = 0, j = 0, k = 0, count = 0, s_count = 0, op_count = 0;
+    int num[100], lineno = 1, tokenvalue = 0, i = 0, j = 0, k = 0, count = 0, s_count = 0, op_count = 0;
 
     f1 = fopen("input.txt", "r");
     f2 = fopen("identifier.txt", "w");
