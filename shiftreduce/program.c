@@ -77,6 +77,10 @@ int main() {
         }
 
         check();
+        if (ip_ptr == len && !(st_ptr == 1 && stack[0] == 'E')) {
+            printf("\n $%s\t\t%s\t\tREJECT\n", stack, &ip_sym[ip_ptr]);
+            break;
+        }
     }
 
     return 0;
