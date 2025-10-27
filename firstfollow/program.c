@@ -46,7 +46,7 @@ int main()
 void first(char c)
 {
     int k;
-    if (islower(c) && !dup(c))
+    if (!isupper(c) && !dup(c))
     {
         f[m++] = c;
     }
