@@ -4,7 +4,7 @@
 
 void main()
 {
-    char stack[20], ip[20], opt[10][10][1], ter[10];
+    char stack[20], ip[20], opt[20][20][1], ter[10];
     int i, j, k, n, top = 0, row, col;
 
     for(i = 0; i < 10; i++)
@@ -13,7 +13,7 @@ void main()
         ip[i] = 0;
         for(j = 0; j < 10; j++)
         {
-            opt[i][j][1] = 0;
+            opt[i][j][0] = 0;
         }
     }
 
